@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>关于我</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css"/>
+		<style type="text/css">
+			.text{
+				color: #006400;/*设置字体颜色*/
+				text-align: center;/*居中*/
+				font-size: 24px;/*设置字体大小*/
+				font-family: "微软雅黑";/*字体是微软雅黑*/
+			}
+			li strong{
+				font-size: 24px
+			}
+			body{
+				background-image: url("img/小猫2.jpg");
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-attachment: fixed;/*保持背景不动*/
+			}
+			.navCon li{
+				list-style-type: none;
+				height: 110px;
+				padding-left: 230px;
+				padding-top: 20px;
+				font-size: 32px;
+				display: inline-block;
+			}
+			a{
+				text-decoration: none;
+			}
+			a:hover{
+				background-color: #F0FFF0;
+				color: green;
+				text-decoration: underline;
+			}
+			.biaoti{
+				width: 800px;
+				height: 600px;
+				background-color:  rgba(255,255,255,0.6);/*白色半透明*/;
+				box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+				border-radius: 20px 20px 20px 20px;
+				margin-top: 30px;
+				margin-left: 30px;
+				padding: 20px;
+				
+				transition-property: all;
+				transition-duration: 1s;
+				transition-timing-function: ease-out;
+				transition-delay: 0.2s;
+				transition: all 1s ease-in-out 0.2;
+			}
+			.biaoti:hover{
+				background-color: #FFF0F5;
+				border: 3px solid #F0FFF0;
+				border-radius: 20px;
+				box-shadow: 5px 5px 10px black;
+			}
+			.wenzi{
+				width: 500px;
+				height: 600px;
+				border-radius: 20px 20px 20px 20px;
+				margin-top: 0px;
+				margin-left: 0px;
+				padding: 30px;
+				box-shadow: 1px 5px 20px;
+				margin: -650px 0px 100px 1000px;
+			}
+			header{
+				width: 100%;
+				height: 60px;
+				background-color: #F0FFF0;
+				margin: 0 auto;/*居中显示*/
+			}
+			nav{
+				width: 100%;
+				height: 70px;
+				background-color: #F0FFF0;
+				margin: 5spx auto;/*居中 显示，且上下边距为5px*/
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+		<ul class="navCon">
+			<li><a href="关于我.html">关于我</a></li>
+			<li><a href="我的作品.html">我的作品</a></li>
+			<li><a href="思考笔记.html">思考笔记</a></li>
+			<li><a href="联系我.html">联系我</a></li>
+		</ul>
+		</nav>
+		<div class="biaoti">
+		<ul>
+			<li><strong>关于我</strong>
+			<ul>
+				<li>我是视觉传达交互方向的学生，关注视觉语言和行为逻辑的结合。目前刚完成基础课程，对平面构成、色彩理论和用户体验有了初步认识。我感兴趣的方向是界面视觉与微动效设计，正在学习Figma和基础前端知识。
+
+					希望通过大学四年，建立“视觉语言+交互逻辑”的双重思维，做出既好看又好用的数字产品。请多指教。</li>
+				<li>擅长用图形、色彩、动效搭建界面，并通过用户研究让设计更贴切真实需求。</li>
+				<li>希望做出既好看又好用的数字体验，让每一次点击都有被人认真对待的感觉。</li>
+			</ul>
+		</ul>
+		<ul>
+			<li><strong>个人荣誉</strong>
+			<ul>
+				<li>课堂作业多次获得“较好”评语。</li>
+				<li>小组项目被选为班级展示案例。</li>
+				<li>已完成figma基础入门课程。</li>
+			</ul>
+			</li>
+		</ul>
+		<ul>
+			<li><strong>我的技能</strong>
+			<ul>
+				<li>设计软件：Photoshop、Illustrator 基础操作（图层、蒙版、路径）；Figma 入门中（能画简单组件和原型）</li>
+				<li>专业基础：色彩搭配、平面构成、排版原则（对齐、对比、层级</li>
+				<li>交互认知：了解用户体验基础流程（草图→线框图→简单点击原型）。</li>
+				<li>手绘能力：能画基础草图辅助设计表达。</li>
+			</ul>
+			</li>
+		</ul>
+		<ul>
+			<li><strong>其他</strong>
+			<ul>
+				<li>普通话标准</li>
+				<li>四级备考中</li>
+				<li>对界面视觉与微动效有持续兴趣</li>
+			</ul>
+			</li>
+		</div>
+		<div class="wenzi">
+		<img src="img/小猫4.jpg" alt="关于我" width="500"/>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>联系我</title>
+		<style type="text/css">
+			body{
+				margin: 0;
+				padding: 0;
+				background-image: url("img/小猫2.jpg");
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-attachment: fixed;/*保持背景不动*/
+			}
+			.container{
+				width: 1000px;
+				margin: 80px auto;
+				background-color: rgba(255,255,255,0.8);
+				padding: 70px;
+				border-radius: 50px;
+				box-shadow: 0 10px 30px rgba(0, 0, 0);
+			}
+			h1{
+				text-align: center;
+				font-size: 50px;
+				color: #696969;
+			}
+			.yinyan{
+				text-align: center;/*居中*/
+				font-size: 20px;
+				color: #808080;
+				margin-bottom: 30px;
+				font-family: "微软雅黑";
+			}
+			form{
+				width: 100%;
+				}
+			label{
+				font-size: 30px;
+				font-family: "微软雅黑";
+				display: block;
+			}
+			input{
+				width: 100%;
+				height: 60px;
+				border-radius: 10px;
+				margin-bottom: 20px;
+				background-color: #F0FFF0;
+				font-size: 25px;
+				padding: 20px;
+				border: none;/*消除边框线*/
+				outline: none;
+			}
+			textarea{
+				width: 100%;
+				height: 150px;
+				border-radius: 10px;
+				background-color: #F0FFF0;
+				border: none;/*消除边框线*/
+				outline: none;
+				font-size: 25px;
+			}
+			button{
+				width: 100%;
+				height: 50px;
+				background-color: #9BCD9B;
+				font-size: 30px;
+				color: white;
+				border-radius: 10px;
+				border: none;/*消除边框线*/
+				outline: none;
+			}
+			button:hover{
+				background-color: #B4EEB4;
+			}
+			.contact{
+				text-align: center;
+				margin-top: 70px;
+				font-size: 20px;
+				font-family: "微软雅黑";
+				color: #808080;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>联系我</h1>
+			<p class="yinyan">如果您对我的作品感兴趣，欢迎通过以下方式与我联系。</p>
+			<form name="lianxi">
+				<label>姓名</label>
+				<input type="text" placeholder="请输入您的名字"/>
+				<label>邮箱</label>
+				<input type="email" placeholder="请输入您的邮箱"/>
+				<label>留言内容</label>
+				<textarea placeholder="请输入留言内容"></textarea>
+				<button>发送信息</button>
+			</form>
+			<div class="contact">
+				<p>邮箱：123456@qq.com</p>
+				<p>电话：123-456-789</p>
+				<p>地址：山东省德州市齐河县旅游大道10号 山东文化艺术职业学院</p>
+			</div>
+	</body>
+</html>

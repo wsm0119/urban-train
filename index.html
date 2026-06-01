@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+		<meta charset="utf-8">
+		<title>首页</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css"/>
+		<style type="text/css">
+			li strong{
+				font-size: 24px
+			}
+			body{
+				background-image: url("img/背景2.jpg");
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-attachment: fixed;/*保持背景不动*/
+			}
+			.navCon li{
+				list-style-type: none;
+				height: 110px;
+				padding-left: 230px;
+				padding-top: 20px;
+				font-size: 32px;
+				display: inline-block;
+			}
+			a{
+				text-decoration: none;
+			}
+			a:hover{
+				background-color: #F0FFF0;
+				color: green;
+				text-decoration: underline;
+			}
+			.content{
+				width: 80%;
+				height: 300px;
+				margin-left: 175px;
+			}
+			#box{
+				width: 200px;
+				height: 100px;
+				background-color: #BCEE68;
+			}
+			.jianjie{
+				width: 770px;
+				height: 460px;
+				background-color: rgba(255,255,255,0.6);/*白色半透明*/;
+				box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+				border-radius: 20px 20px 20px 20px;
+				margin: -460px 150px 100px 460px;
+				font-size: 16px;
+			}
+			.jianjie2{
+				width: 760px;
+				height: 440px;
+				background-color: rgba(255,255,255,0.6);/*白色半透明*/;
+				box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+				border-radius: 20px 20px 20px 20px;
+				margin: -450px 550px 100px 460px;
+				font-size: 18px;
+				padding: 10px;
+			}
+			.tupian{
+				width: 350px;
+				height: 350px;
+				margin-top: 10px;
+				margin-left: 0px;
+				padding: 30px;
+				box-shadow: 5px 5px 30px;
+				border-radius: 20px 20px 20px 20px;
+			}
+			.tupian2{
+				width: 350px;
+				height: 350px;
+				margin-top: 10px;
+				margin-left: 0px;
+				padding: 30px;
+				box-shadow: 5px 5px 30px;
+				border-radius: 20px 20px 20px 20px;
+				
+			}
+			.tupian3{
+				width: 350px;
+				height: 750px;
+				margin-top: 10px;
+				margin-left: 0px;
+				padding: 30px;
+				box-shadow: 5px 5px 30px;
+				border-radius: 20px 20px 20px 20px;
+				margin: -930px 0px 100px 1255px;
+			}
+			.d1{
+				width: 1300px;
+				height: 570px;
+				margin-top: 10px;
+				margin-left: 0px;
+				background-color: rgba(255,255,255,0.3);/*白色半透明*/;
+				border-radius: 20px 20px 20px 20px;
+				padding: 10px;
+				margin: 10px 0 0 0;
+			}
+			.d2{
+				width: 1300px;
+				height: 450px;
+				margin-top: 10px;
+				margin-left: 0px;
+				background-color: rgba(255,255,255,0.3);/*白色半透明*/;
+				border-radius: 20px 20px 20px 20px;
+				padding: 10px;
+				margin: -60px 0 0 0;
+			}
+			header{
+				width: 100%;
+				height: 60px;
+				background-color: #F0FFF0;
+				margin: 0 auto;/*居中显示*/
+			}
+			nav{
+				width: 100%;
+				height: 70px;
+				background-color: #F0FFF0;
+				margin: 5spx auto;/*居中 显示，且上下边距为5px*/
+			}
+			div{
+				width: 350px;
+				height: 350px;
+				
+				overflow: hidden;
+			}
+			div img{
+				transition-duration: 2s;
+			}
+			div img:hover{
+				transform: scale(2);
+			}
+			@media screen and (max-width:768px){
+				.box{
+					flex-direction: column;
+				}
+				h1{
+					font-size: 20px;
+				}
+				.card{
+					height: 350px;
+				}
+				.pic1,.pic2,.pic3{
+					height: 280px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<ul class="navCon">
+				<li><a href="关于我.html" target="_blank">关于我</a></li>
+				<li><a href="我的作品.html">我的作品</a></li>
+				<li><a href="思考笔记.html">思考笔记</a></li>
+				<li><a href="联系我.html">联系我</a></li>
+			</ul>
+		</nav>
+		<div class="d1">
+			<ul>
+				<li><strong>个人照片</strong></li>
+			</ul>
+		<div class="tupian">
+		<div><img src="img/个人照片1.jpg" alt="个人照片" width="350"/></div>
+		</div>
+		<div class="jianjie">
+		<ul>
+			<li><strong>基本信息</strong>
+				<ul>
+					<li>姓名：W</li>
+					<li>专业：视觉传达交互设计</li>
+					<li>意向：设计助理/实习/学习型岗位</li>
+				</ul>
+			</li>
+		</ul>
+		<ul>
+			<li><strong>技能</strong>
+				<ul>
+					<li>设计软件：Photoshop、Illustrator 基础操作</li>
+					<li>专业基础：色彩搭配、排版原则、平面构成</li>
+					<li>交互认知：用户体验基础流程（草图→线框图→简单原型）</li>
+					<li>前端了解：HTML/CSS 基础入门</li>
+				</ul>
+				
+			</li>
+		</ul>
+		<ul>
+			<li><strong>实践与积累</strong>
+				<ul>
+					<li>课堂作业多次获得良好</li>
+					<li>小组作业作为优秀展示案例</li>
+					<li>完成figma基础入门课程</li>
+				</ul>
+			</li>
+		</ul>
+		<ul>
+			<li><strong>个人优势</strong>
+				<ul>
+					<li>细心观察：对生活中的视觉细节敏感，习惯留意App界面、海报、导视系统的设计逻辑</li>
+					<li>耐心迭代：不排斥反复修改，相信好设计是打磨出来的</li>
+					<li>抗压能力：能接受合理的批评，把反馈当作优化方向而非否定</li>
+				</ul>
+			</li>
+		</ul>
+		</div>
+		</div>
+		<div class="d2">
+		<div class="tupian2">
+		<div><img src="img/小猫3.jpg" alt="个人照片" width="350"/></div>
+			</div>
+			<div class="jianjie2">
+		<p>
+			<strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;欢迎来到我的个人作品集网站</strong>
+			这里就像一间装满奇思妙想的小房间，每一个角落都藏着我用心打磨的小作品、小故事和小灵感～首先说说“关于我”：我叫小W，一个永远对世界保持好奇心的设计
+			学习者，喜欢小猫和阳光洒在键盘上的午后.你会在“关于我”里看到我的自画像、兴趣清单，还有我从零学习前端的可爱旅程。接着是我的“作品展示台”——这里收纳
+			了我做过的好玩项目：有仿画风格的个人主页、会眨眼的交互小动画，还有为流浪猫救助站做的宣传页面。我会在下面写下创作灵感和遇到的小挑战，让你不仅看到
+			结果，也看到过程。目前作品不算多，但每一个都倾注了心血，以后还会不断塞进更多好玩的东西哦～而“思考笔记”则是我脑内小剧场的实体化：记录学习路上的碎
+			碎念、踩坑后的顿悟、看到好设计时的尖叫，以及一些还没变成作品的小灵感。比如“为什么圆角矩形看起来更可爱？”“CSS动画如何让页面有呼吸感？”……没有长篇论文，只有像朋友聊天一样的学习日记。有时候也会分享一本喜欢的书、一个有用的插件，或者一个让自己拍大腿的报错解决
+			方案。我认为成长的过程本身就很值得被记录下来，哪怕笨拙也很珍贵。最后是“联系我”——如果你喜欢我的作品，或者有合作、建议、甚至只是想给我推荐一只可爱
+			的猫表情包，都欢迎通过这个板块找到我！那里有我的邮箱、小红书账号和一个悄悄埋下的留言小盒子。我会认真看每一条消息并努力回复。期待和你成为网友，一起在创作的世界里打滚撒欢！🐾
+		</p>
+		</div>
+		</div>
+		<div class="tupian3">
+		<img src="img/个人照片2.jpg" alt="个人照片" width="350"/>
+		</div>
+	</body>
+</html>

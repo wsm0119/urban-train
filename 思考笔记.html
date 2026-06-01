@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.text{
+				color: black;/*设置字体颜色*/
+				text-align: center;/*居中*/
+				font-size: 24px;/*设置字体大小*/
+				font-family: "微软雅黑";/*字体是微软雅黑*/
+				background-attachment: fixed;/*保持背景不动*/
+			}
+			li strong{
+				font-size: 24px
+			}
+			body{
+				background-image: url("img/小猫2.jpg");
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			.navCon li{
+				list-style-type: none;
+				height: 110px;
+				padding-left: 230px;
+				padding-top: 20px;
+				font-size: 32px;
+				display: inline-block;
+			}
+			a{
+				text-decoration: none;
+			}
+			a:hover{
+				background-color: #F0FFF0;
+				color: green;
+				text-decoration: underline;
+			}
+			.navCon li{
+				list-style-type: none;
+				height: 110px;
+				padding-left: 230px;
+				padding-top: 20px;
+				font-size: 32px;
+				display: inline-block;
+			}
+			a{
+				text-decoration: none;
+			}
+			a:hover{
+				background-color: #F0FFF0;
+				color: green;
+				text-decoration: underline;
+			}
+			.bt{
+				width: 900px;
+				height: 600px;
+				background-color: #F0FFF0;
+				border-radius: 20px 20px 20px 20px;
+				background-color:  rgba(255,255,255,0.6);/*白色半透明*/;
+				box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+				margin-top: 30px;
+				margin-left: 30px;
+				padding: 20px;
+			}
+			.wz{
+				width: 600px;
+				height: 500px;
+				border-radius: 20px 20px 20px 20px;
+				margin-top: 0px;
+				margin-left: 0px;
+				padding: 30px;
+				box-shadow: 1px 5px 20px;
+				margin: -600px 0px 100px 1000px;
+			}
+			header{
+				width: 100%;
+				height: 60px;
+				background-color: #F0FFF0;
+				margin: 0 auto;/*居中显示*/
+			}
+			nav{
+				width: 100%;
+				height: 70px;
+				background-color: #F0FFF0;
+				margin: 5spx auto;/*居中 显示，且上下边距为5px*/
+			}
+			.box{
+				width: 600px;
+				height: 500px;
+				background-image: url("img/小猫5.jpg");
+				background-repeat: no-repeat;
+				background-size: cover;
+				overflow: hidden;
+				position: relative;
+				border-radius: 20px 20px 20px 20px;
+				margin-top: 0px;
+				margin-left: 0px;
+				padding: 30px;
+				box-shadow: 1px 5px 20px;
+				margin: -600px 0px 100px 1000px;
+			}
+			.box hgroup{
+				width: 700px;
+				height: 600px;
+				background-color: rgba(0,0,0,0.5);
+				position: absolute;
+				left: 0px;
+				top: -600px;
+			}
+			.box:hover hgroup{
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				transition-property: all;
+				transition: duration 2s;
+				transition-timing-function: ease-in-out;
+			}
+			.box hgroup h2:nth-child(1){
+			/*选择.box 元素内部的<hgroup> 元素内部的第一个（且必须是h2元素的）子元素*/
+			text-align: center;
+			color: white;
+			font-size: 70px;
+			font-family: "黑体";
+			}
+			.box hgroup h2:nth-child(2){
+				text-align: center;
+				color: white;
+				font-size: 24px;
+				font-family: "黑体";
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+		<ul class="navCon">
+			<li><a href="关于我.html">关于我</a></li>
+			<li><a href="我的作品.html">我的作品</a></li>
+			<li><a href="思考笔记.html">思考笔记</a></li>
+			<li><a href="联系我.html">联系我</a></li>
+		</ul>
+		</nav>
+		<div class="bt">
+		<ul>
+			<li><strong>目前的理解</strong>
+				<ul>
+					<li>视觉传达解决<ins>“如何被看到”</ins>，交互解决<ins>“如何被使用”</ins>。两者交界处是体验设计的核心；好看不等于好用，好用离不开关乎细节的视觉引导。</li>
+					<li>先定场景和用户，再定风格与动效；信息层级优先于装饰表达；每个交互动作都需要有明确的视觉回应。</li>
+					<li>走完完整操作流程，而不是只看设计稿；了解技术边界，避免不可落地的方案；<ins>定期归档失败案例</ins>，比只记录成功更有用。</li>
+					<li>微动效如何降低认知负担；色彩与无障碍设计的交叉点。</li>
+				</ul>
+			</li>
+		</ul>
+		<ul>
+			<li><strong>正在学习的内容</strong>
+				<ul>
+					<li>设计基础：平面构成、色彩搭配、排版原则。</li>
+					<li>软件工具：Photoshop、Illustrator、Figma（入门中）。</li>
+					<li>前端常识：HTML/CSS 基本语法，知道实现的边界在哪。</li>
+					<li>交互逻辑：从草图到线框图再到可点原型的基本流程。</li>
+				</ul>
+			</li>
+		</ul>
+		<ul>
+			<li><strong>经常提醒自己的事</strong>
+				<ul>
+					<li>先想“谁来用、在什么场景”，再想好不好看。做完设计后，自己走一遍完整操作流程。</li>
+					<li>不排斥改稿，每次修改都是更接近需要的方案。</li>
+					<li>能用手绘草图说清楚想法，比直接打开软件更重要。</li>
+				</ul>
+			</li>
+		</ul>
+		<ul>
+			<li><strong>现阶段小目标</strong>
+				<ul>
+					<li>熟练掌握 Figma 组件功能。</li>
+					<li>完成 2-3 个完整的小界面练习（比如计算器、待办清单、音乐播放器）。</li>
+					<li>把课堂作业整理成电子作品集（哪怕很简单）。</li>
+				</ul>
+			</li>
+		</div>
+		<div class="box">
+			<hgroup>
+				<h2>我的技能( ˉ͈̀꒳ˉ͈́ )</h2>
+				<h2>熟练使用 Figma等交互与原型工具；精通 Photoshop、Illustrator 进行图形与界面设计；
+				掌握 After Effects、Principle 制作动效演示；了解 Blender 三维软件Midjourney 
+				等AIGC辅助设计；具备基础 HTML/CSS 落地能力。
+				●ｖ●
+				</h2>
+			</hgroup>
+		</div>
+	</body>
+</html>

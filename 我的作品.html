@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>类选择器</title>
+		<style type="text/css">
+			*{
+				 margin:0;
+				 padding:0;
+				 box-sizing:border-box;
+			}
+			body{
+				background-image: url("img/小猫2.jpg");
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-attachment: fixed;/*保持背景不动*/
+			}
+			.text{
+				color: #006400;/*设置字体颜色*/
+				text-align: left;/*居中*/
+				font-size: 20px;/*设置字体大小*/
+				font-family: "方正仿宋简体";/*字体是方正仿宋简体*/
+			}
+			li strong{
+				font-size: 24px;
+				color: #698B69;
+			}
+			.b{
+				width: 1000px;
+				height: 400px;
+				background-color: rgba(255,255,255,0.3);/*白色半透明*/;
+				box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+				border-radius: 20px 20px 20px 20px;
+				margin: -550px 150px 100px 600px;/*上右下左*/
+				padding: 20px;
+				}
+			.tp{
+				width: 540px;
+				height: 370px;
+				margin-top: 0px;
+				margin-left: 0px;
+				padding: 20px;
+				box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+				
+				}
+			.tp2{
+				width: 550px;
+				height: 410px;
+				margin-top: 0px;
+				margin-left: 0px;
+				padding: 20px;
+				box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+				margin: 100px 2000px 150px 0;
+				}
+			.dabox{
+				width: 1000px;
+				height: 160px;
+				background-color: rgba(255,255,255,0.3);/*白色半透明*/
+				box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+				border-radius: 20px 20px 20px 20px;
+				margin: -340px 150px 100px 600px;/*上右下左*/
+				padding: 20px;
+			}
+			.dabox1{
+				width: 1000px;
+				height: 170px;
+				background-color: rgba(255,255,255,0.3);/*白色半透明*/
+				box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+				border-radius: 20px 20px 20px 20px;
+				margin: -75px 150px 100px 600px;/*上右下左*/
+				padding: 20px;
+			}
+			.navCon li{
+				list-style-type: none;
+				height: 110px;
+				padding-left: 230px;
+				padding-top: 20px;
+				font-size: 32px;
+				display: inline-block;
+			}
+			a{
+				text-decoration: none;
+			}
+			a:hover{
+				background-color: #F0FFF0;
+				color: green;
+				text-decoration: underline;
+			}
+			.content{
+				width: 80%;
+				height: 300px;
+				margin-left: 175px;
+			}
+			header{
+				width: 100%;
+				height: 60px;
+				background-color: #F0FFF0;
+				margin: 0 auto;/*居中显示*/
+			}
+			nav{
+				width: 100%;
+				height: 70px;
+				background-color: #F0FFF0;
+				margin: 5spx auto;/*居中 显示，且上下边距为5px*/
+			}
+			/* 作品展示区 */
+			.box{
+				width:90%;
+				margin:50px auto;
+				display:flex;
+				 justify-content:space-between;
+				 gap:20px;
+			}
+			/* 卡片 */
+			.card{
+			    flex:1;/*平均分父元素的空间*/
+			    height:480px;
+			    background:white;
+			    border-radius:15px;
+				box-shadow:0 5px 15px rgba(0,0,0,.15);
+				overflow:hidden;
+				transition:0.3s;
+				}
+			.card:hover{
+				transform:translateY(-10px);
+				box-shadow:0 10px 20px rgba(0,0,0,.25);
+				}
+			/* 图片 */
+			.pic1{
+				width:100%;
+				height:400px;
+				background-image: url("img/作品1.jpg");
+				background-size: cover;
+				background-repeat: no-repeat;
+				}
+			.pic2{
+				width:100%;
+				height:400px;
+				background-image: url("img/作品2.jpg");
+				background-size: cover;
+				background-repeat: no-repeat;
+				}
+			.pic3{
+				width:100%;
+				height:400px;
+				background-image: url("img/作品3.jpg");
+				background-size: cover;
+				background-repeat: no-repeat;
+				}
+				/* 文字 */
+				.text2{
+				text-align:center;
+				line-height:80px;
+				font-size:24px;
+				}
+				@media screen and (max-width:768px){
+				.box{
+					flex-direction: column;
+				}
+							
+			}
+		</style>
+		
+	</head>
+	<body>
+		<nav>
+		<ul class="navCon">
+			<li><a href="关于我.html">关于我</a></li>
+			<li><a href="我的作品.html">我的作品</a></li>
+			<li><a href="思考笔记.html">思考笔记</a></li>
+			<li><a href="联系我.html">联系我</a></li>
+		</ul>
+		</nav>
+	<div class="tp">
+		<img src="img/杂志1.png" alt="我的作品" width="500"/>
+	</div>
+	</div>
+	<div class="dabox">
+	<ul>
+		<li><strong>作品整体定位与风格</strong>
+		<ul>
+			<li class="text">主题方向：以「秋日制服少女」为核心主题，模拟日本校园杂志的内页与封面设计，营造“放学后的少女日常”氛围感。</li>
+			<li class="text">风格特点：典型的日系清新胶片风，融合了复古排版与JK制服文化，低饱和度色调+手写感字体+生活化照片，还原了《Seventeen》《non-no》等少女杂志的视觉语言。。</li>
+		</ul>
+	</ul>
+	</div>
+	<div class="dabox1">
+	<ul>
+		<li><strong>整体设计亮点</strong>
+		<ul>
+			<li class="text">色彩统一性：两组设计都围绕“秋日+制服”的主题，左侧的深绿背景与右侧的黑色背景形成对比，同时都以白色文字/边框做调和，整体风格和谐统一。</li>
+			<li class="text">排版层次感：左侧通过照片的错落排列、右侧通过文字的大小对比，营造出丰富的视觉层次，避免单调。</li>
+			<li class="text">文化符号还原：精准复刻了日系JK杂志的核心元素——竖排日文标题、拍立得白边、模拟条码与刊号，让作品充满真实的杂志质感。</li>
+		</ul>
+	</div>
+	</ul>
+	<div class="tp2">
+	<img src="img/像素2.jpg" alt="我的作品" width="500"/>
+	</div>
+	<div class="b">
+	<ul>
+		<li><strong>角色设计与主题呼应</strong>
+		<ul>
+			<li class="text">整体设定高度统一：黑发绿瞳+四叶草发饰+绿色系校服，色彩和元素都紧扣“清新、校园、幸运”的主题，风格协调。</li>
+			<li class="text"> 人物形象讨喜：Q版坐姿+软萌的表情，传递出安静、乖巧的氛围感，很有亲和力。</li>
+		</ul>
+	</ul>
+	<ul>
+		<li><strong>色彩搭配和谐舒适</strong>
+		<ul>
+			<li class="text">主色调以深绿、浅绿、白色、棕色为主，低饱和度的绿色搭配暖调的肤色、棕色，整体清新柔和，视觉上很舒服。</li>
+			<li class="text">色彩分层清晰：头发的深绿高光、校服的浅绿线条、皮肤的明暗过渡，用有限的颜色做出了丰富的层次，没有杂乱的色彩堆砌。</li>
+		</ul>
+	</ul>
+	<ul>
+		<li><strong>动图与动态设计</strong>
+		<ul>
+			<li class="text">坐姿构图稳定：盘腿坐的姿势让画面重心稳定，人物居中，视觉焦点明确，适合作为头像或IP形象使用。</li>
+			<li class="text">动作自然生动：双手捧书的动作细节到位，手部的像素结构清晰，动态感不强但很自然，强化了“安静阅读”的人物设定。</li>
+		</ul>
+		</div>
+			<div class="box">
+			    <div class="card">
+			        <div class="pic1"></div>
+					<div class="text"></div>
+				</div>
+			
+				<div class="card">
+			        <div class="pic2"></div>
+			        <div class="text2"></div>
+			    </div>
+			
+			    <div class="card">
+			        <div class="pic3"></div>
+			        <div class="text2"></div>
+			    </div>
+			</div>
+		</body>
+</html>
